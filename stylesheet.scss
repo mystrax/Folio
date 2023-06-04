@@ -12,6 +12,7 @@ body {
   background-image: url(images/bg1.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 /*content of nav bar*/
 li{
@@ -116,11 +117,11 @@ section#homedesc{
     margin-bottom: 1rem;
 }
 section#projects{
-    position: relative;
     padding:0 2rem;
-    background-image: url('images/bg2.png');
+    background-image: url(images/bg2.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 #projects h1{
@@ -156,8 +157,8 @@ section#projects{
     width: 300px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #2d2f30 ;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    background-color: #2e2e2e7f ;
   }
   
   .project-card img {
@@ -179,14 +180,49 @@ section#projects{
     margin-bottom: 1rem;
     color:#232323;
   }
+  .project-card button{
+    background-color: #9d15f8;
+    color: #fff;
+    padding:0.8rem 5rem;
+    border:none;
+    outline:none;
+    border-radius:0.5rem;
+    font-size:0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
   
   
   .see-more {
+    color: #000000;
     padding: 1rem 2rem;
     font-size: 16px;
     font-weight: bold;
     border-radius: 0.5rem;
   }
+  .see-more:hover {
+    background-color: hsl(276, 92%, 58%);
+    color: #000000;
+    padding:0.8rem 5rem;
+    border:none;
+    outline:none;
+    border-radius:0.5rem;
+    font-size:0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease
+  }
+
+/*second section videos*/
+section#contacts{
+  height: 100vh;
+  background: #232323;
+  background-image: url(images/bg3.png);
+  background-size: cover;
+  background-position: center;
+}
+
 /*RESPONSIVE DESIGN*/
 
 /*TABLET*/
