@@ -185,6 +185,11 @@ section#projects {
   background-color: rgba(46, 46, 46, 0.4980392157);
 }
 
+.project-card:hover {
+  scale: 1.05;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .project-card img {
   width: 100%;
   max-height: 200px;
@@ -209,7 +214,7 @@ section#projects {
 .project-card button {
   background-color: #9d15f8;
   color: #fff;
-  padding: 0.8rem 5rem;
+  padding: 0.8rem 6rem;
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -228,9 +233,9 @@ section#projects {
 }
 
 .see-more:hover {
-  background-color: hsl(276, 92%, 58%);
+  background-color: hsl(276, 91%, 59%);
   color: #000000;
-  padding: 0.8rem 5rem;
+  padding: 0.8rem 6rem;
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -242,11 +247,30 @@ section#projects {
 
 /*second section videos*/
 section#contacts {
+  padding: 0 2rem;
   height: 100vh;
   background: #232323;
   background-image: url(images/bg3.png);
   background-size: cover;
   background-position: center;
+}
+
+#contacts h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#contacts p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
 }
 
 /*RESPONSIVE DESIGN*/
