@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -69,6 +71,7 @@ header{
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2 ease;
+  box-shadow: 0 0 10px 5px #9d15f8;
 }
 .action_btn:hover{
   scale: 1.05;
@@ -120,7 +123,8 @@ section#homedesc{
     margin-bottom: 1rem;
 }
 section#projects{
-    padding:0 2rem;
+  height: 100vh;
+  width:100%;
     background-image: url(images/bg2.png);
     background-size: cover;
     background-position: center;
@@ -161,11 +165,11 @@ section#projects{
     width: 300px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(204, 139, 139, 0.1);
     background-color: #2e2e2e7f ;
   }
   .project-card:hover{
-    scale: 1.05;
+    scale: 1.1;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
@@ -198,7 +202,8 @@ section#projects{
     font-size:0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    box-shadow: 0 0 10px 5px #9d15f8;
+    transition: scale 0.3 ease;
   }
   
   
@@ -219,7 +224,7 @@ section#projects{
     font-size:0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease
+    transition: scale 0.2 ease;
   }
 
 /*second section videos*/
@@ -247,6 +252,33 @@ section#contacts{
   text-align: center;
   color: #ffffff;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 46px;
+  color: hsl(276, 91%, 59%);
+}
+
+.social-icons a:hover {
+  color: #2ca0e2;
+}
+video{
+  position: relative;
+  top: 120px;
+  height: 480;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  border:solid #48abe0  1px;
+  size-adjust: auto;
+  box-shadow: 0 0 30px 15px #48abe0;
+}
+
+
 
 
 /*RESPONSIVE DESIGN*/
@@ -264,9 +296,16 @@ section#contacts{
     .dropdown_menu{
         display: block;
     }
+    video{
+     display: none;
+    }
+    .contactcontainer{
+      position:relative;
+      top:400px;
+    }
 }
 /*MOBILE*/
-@media(max-width: 576px){
+@media screen and (min-width:320px) and (max-width: 630px){
     .navbar .logo a{
         font-size: 1.2rem;
     }
@@ -274,4 +313,32 @@ section#contacts{
         left: 2rem;
         width:unset;
     }
+    .footer{
+      position: unset;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .contactcontainer{
+      position:relative;
+      top:510px;
+      size: 50%;
+    }
+    #contacts {
+      h1{
+        font-size:1.4rem;
+        }
+        p{
+          font-size: 0.9rem;
+        }
+        .social-icons a {
+          display: inline-block;
+          margin: 0 10px;
+          font-size: 36px;
+          color: hsl(276, 91%, 59%);
+        }
+  }
 }
