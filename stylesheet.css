@@ -12,6 +12,26 @@ html {
   font-family: "Varela Round", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2ca0e2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9d15f8;
+  border-radius: 4rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /*body*/
 body {
   height: 100vh;
@@ -288,7 +308,7 @@ video {
   height: 480;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.3rem;
+  border-radius: 0.7rem;
   border: solid #48abe0 1px;
   size-adjust: auto;
   box-shadow: 0 0 30px 15px #48abe0;
